@@ -1,8 +1,5 @@
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import { LinkContainer } from "react-router-bootstrap";
-import Wallet from "../Wallet/Wallet";
 
 function Header() {
 
@@ -19,14 +16,6 @@ function Header() {
             />{" "}
             Growathon
           </Navbar.Brand>
-          <Nav className="justify-content-end">
-            <LinkContainer to="/">
-              <Nav.Link>Home</Nav.Link>
-            </LinkContainer>
-            <LinkContainer to="/">
-            </LinkContainer>
-          </Nav>
-          <Wallet />
         </Container>
       </Navbar>
     );

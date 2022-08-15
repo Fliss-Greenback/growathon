@@ -1,0 +1,84 @@
+.purplebanner{
+    height: 7rem;
+    width: fullscreen;
+    background-color: white;
+    text-decoration-color: white;
+    text-align-last: auto;
+    border-radius: 17px;
+    
+}
+
+.bannertext{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.heroImg{
+    height: 17rem;
+    margin-left:15%
+}
+
+.HeroSec{
+    width: 75%;
+    text-align:left;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-shadow: #2b144b;
+}
+
+.landing_main_text{
+    text-decoration: #2b144b;
+}
+
+.rewards {
+    height: 4rem;
+    padding-top: 5px;
+    padding-left: center;
+}
+
+.plant_icon {
+    height: 4rem;
+}
+
+#socialMediaLogins {
+    width: 0;
+}
+
+
+
+
+.h3{
+    color: white;
+}
+
+.body {
+    color: white    
+}
+
+.h1 {
+    color: white
+}
+
+.background-image {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: "100%";
+}
+
+.dark-text {
+    color: black;
+}
+
+
+.button-responsive {
+    left:auto
+}
+
+.second-section-homepage {
+    background-color: white;
+    width: 100%;
+}
+
+.img-overlay {
+    height: auto;
+}
