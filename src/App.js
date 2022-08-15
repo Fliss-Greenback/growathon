@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { store } from "./store";
+import { Provider } from "react-redux";
+import PlantDetail from "./myplants/PlantDetail";
+import OrigSiteInjector from "./general/OrigSiteInjector";
+import MyPlants from "./myplants/MyPlants";
+import OfferDetails from "./rewards/RewardDetails";
+import Offers from "./rewards/Rewards";
+import Home from "./Pages/Home";
+import Login from "./auth/Login";
+import Header from "./header/Header";
+import UpdatePlant from "./myplants/UpdatePlant";
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Provider store={store}>
+        <Router>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+          </Routes>
+        </Router>
+      </Provider>
     </div>
   );
 }
