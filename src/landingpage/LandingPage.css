@@ -44,7 +44,9 @@
     width: 0;
 }
 
-
+.light-text {
+    color: white;
+}
 
 
 .h3{
@@ -79,6 +81,10 @@
     width: 100%;
 }
 
+.collaborator-img {
+    height: 50px;
+    margin: 20px;
+}
 .img-overlay {
     height: auto;
 }
