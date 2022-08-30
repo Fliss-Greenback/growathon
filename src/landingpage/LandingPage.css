@@ -44,9 +44,7 @@
     width: 0;
 }
 
-.light-text {
-    color: white;
-}
+
 
 
 .h3{
@@ -71,9 +69,13 @@
     color: black;
 }
 
+.sub-section {
+
+}
 
 .button-responsive {
-    left:auto
+    
+    padding: 10px;
 }
 
 .second-section-homepage {
@@ -82,9 +84,19 @@
 }
 
 .collaborator-img {
-    height: 50px;
+    max-height: 60px;
+    max-width: 140px;
     margin: 20px;
 }
+
 .img-overlay {
     height: auto;
+}
+
+.sign-up-button {
+    padding: 20px;
+}
+
+.light-text {
+    color: white;
 }

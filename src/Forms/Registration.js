@@ -1,10 +1,11 @@
 import React, { useState, setState } from 'react';
+import { useNavigate} from 'react-router-dom';
 import {database} from '../firebase'
 import {ref,push,child,update} from "firebase/database";
 import './style.css'
 
 function Registration() {
-    
+    const navigate = useNavigate();
     const [firstName, setFirstName] = useState("");
     const [email, setEmail] = useState("");
 
@@ -20,11 +21,14 @@ function Registration() {
     }
 
     const handleSubmit = () =>{
-        let user=(firstName,email);   
+        
+        let obj={firstName,
+            email}   
         const newPostKey = push(child(ref(database), 'posts')).key;
         const updates = {};
-        updates['/' + newPostKey] = user
-        return update(ref(database), updates);
+        updates['/' + newPostKey] = obj
+        return update(ref(database), updates, alert("Thanks for signing up. We will be in touch!"), navigate('/'));
+        
     }
     return(
         <div className="form">
@@ -39,7 +43,7 @@ function Registration() {
                 </div>
             </div>
             <div className="footer">
-                <button onClick={()=>handleSubmit()} type="submit" className="btn">Register</button>
+                <button onClick={()=>handleSubmit()} variant="primary" type="submit" className="btn">Register</button>
             </div>
         </div> 
     )       

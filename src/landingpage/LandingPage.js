@@ -8,8 +8,8 @@ import Stuff from "./STUFF.png";
 import Tehiku from "./tehiku.png";
 import Upperhutt from "./upperhutt.png";
 import WCC from "./wcc.png";
-
-
+import PMLogo from "../landingpage/PLantme_logo.png";
+import Pollinator from "../landingpage/pp.png";
 import "./LandingPage.css";
 
 function LandingPage() {
@@ -21,7 +21,7 @@ function LandingPage() {
         <Image className="img-overlay" src={PlantMe} fluid="True"></Image>
       </div>
       <Link to="/register">
-        <Button variant="primary" size="lg" className="button-responsive"           
+        <Button variant="primary" size="md" className="sign-up-button"           
         onClick={() => {
             console.log(`/register/`);
             console.log(navigate(`{/register}`));
@@ -33,41 +33,40 @@ function LandingPage() {
       <div className="light-text"><h4 > Sign up and get notified as soon as the Growathon app goes live.</h4></div>
       
         <div className="light-text"><h4>Be the first to start growing your rewards.</h4></div>
-      <div className="second-section-homepage">
-        <div className="sub-section">
-          <h4 className="dark-text">Brought to you by:</h4>
-        </div>
+        <div className="second-section-homepage">
         <Row className="d-flex justify-content-md-center">
-          <Col xs={4} sm={4} md={4}>
+          <Col xs={4} md={4} lg={4}>
             <div className="sub-section">
-              <h2 className="dark-text">Our supporters:</h2>
+              <h2 className="dark-text">Brought to you by</h2>
             </div>
-            <Image className="collaborator-img" src={WCC} fluid="True"></Image>
-            <Image className="collaborator-img" src={Upperhutt} fluid="True"></Image>
- 
-          <div>
-          <h2 className="dark-text">Featured by:</h2>
-        </div>
-        <div className="sub-section">
+            <Image className="collaborator-img" src={PMLogo}></Image>
+            <Image className="collaborator-img" src={Pollinator}></Image>
+          </Col>
+          <Col>
+            <div className="sub-section">
+              <h2 className="dark-text">Our generous supporters</h2>
+            </div>
+            <div className="sub-section">
+              <Image
+                className="collaborator-img"
+                src={WCC}
+                fluid="True"
+              ></Image>
+              <Image className="collaborator-img" src={Upperhutt}></Image>
+            </div>
+          </Col>
+          <Col>
+            <div>
+              <h2 className="dark-text">Featured by</h2>
+            </div>
+            <div className="sub-section">
               <Image className="collaborator-img" src={Herald}></Image>
               <Image className="collaborator-img" src={Stuff}></Image>
               <Image className="collaborator-img" src={Tehiku}></Image>
-        
-        </div>
+            </div>
           </Col>
         </Row>
-
-      <div className="sub-section">
-        <Row className="justify-content-md-center">
-
-        </Row>
       </div>
-      <div>
-        
-      </div>
-      </div>
-      
-
       <div className="section-image">
         <Image src={Home2} fluid="True"></Image>
       </div>
